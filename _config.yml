@@ -17,7 +17,7 @@ title: Travel Size Life
 email: hello@travelsizelife.com
 description: > # this means to ignore newlines until "baseurl:"
   Travel Site
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: /travelsizelife # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -27,6 +27,9 @@ permalink: none
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+sass:
+  sass_dir: _sass
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,27 @@
+.image-grid {
+  display: flex;
+  margin: 0 ((($site-width - $site-text-width) / -2) - 100);
+  width: $site-width + 200;
+  
+  img { 
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .im-landscape {
+    flex: 1.5;
+    padding: $spacing-small;
+  }
+
+  .im-portrait {
+    flex: 0.6666666667;
+    padding: $spacing-small;
+  }
+
+  .im-single {
+    flex: 1;
+    padding: $spacing-small;
+  }
+}

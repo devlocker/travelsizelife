@@ -1,0 +1,46 @@
+---
+---
+
+// Variables
+$font-color: #333;
+$font-color-light: #666;
+$font-color-muted: #999;
+
+$border-color: #ccc;
+
+$spacing-base: 8px;
+$spacing-small: $spacing-base;
+$spacing-regular: $spacing-base * 2;
+$spacing-large: $spacing-base * 3;
+$spacing-xlarge: $spacing-base * 4;
+$spacing-xxlarge: $spacing-base * 8;
+
+$font-family-base: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+$font-family-headings: georgia, serif;
+$font-family-monospace: menlo, monaco, monospace;
+
+$font-size-base: 16px;
+$font-size-small: 12px;
+
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+
+$site-width: 760px;
+$site-text-width: 660px;
+
+
+$link-color: #b36bde;
+$link-underline: #a0aced;
+
+// Imports
+@import "normalize";
+
+@import "image-grids";
+@import "layout";
+@import "links";
+@import "typography";
+
+// Global
+body {
+  background-color: #fff;
+}

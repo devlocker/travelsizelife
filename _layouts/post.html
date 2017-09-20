@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
+</head>
+</html>
+<body>
+  <header class="global-nav">
+    <div class="logo">
+      <a href="{{ site.url }}">travelsize.life</a>
+    </div>
+    <div class="global-nav__links">
+      <a href="{{ site.url }}">Home</a>
+      <a href="https://www.instagram.com/travelsizelife/" target="_blank">Instagram</a>
+    </div>
+  </header>
+  <div class="post">
+    <div class="post__date">{{ page.visit_date }}</div>
+    {{ content }}
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer__menu">
+      <a href="{{ site.url }}">Home</a>
+      <a href="https://www.instagram.com/travelsizelife/">Instagram</a>
+    </div>
+
+    <div class="footer__copyright">
+      Copyright © 2017 travelsize.life
+    </div>
+  </footer>
+</body>

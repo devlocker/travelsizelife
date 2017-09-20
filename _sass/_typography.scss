@@ -1,0 +1,31 @@
+html, body {
+  color: $font-color;
+  font-family: $font-family-base;
+  line-height: $font-size-base * 1.6;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: $font-family-headings;
+  font-weight: normal;
+  margin: 0 0 $spacing-xlarge 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: $font-family-headings;
+  font-weight: normal;
+  margin: $spacing-xlarge 0;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: $font-family-headings;
+  font-weight: normal;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: $spacing-xxlarge 0;
+}

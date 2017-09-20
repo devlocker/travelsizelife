@@ -1,0 +1,122 @@
+header.global-nav {
+  padding: $spacing-regular;
+  display: flex;
+
+  .global-nav__links {
+    margin-left: auto;
+  }
+
+  a {
+    font-size: $font-size-small;
+    letter-spacing: 1px;
+    margin: 0 $spacing-small;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $font-color-light;
+
+    &:hover {
+      color: $font-color;
+    }
+  }
+}
+
+.new-feed {
+  width: $site-width;
+  margin: auto;
+  display: flex;
+  margin-top: $spacing-xlarge * 2;
+
+  .new-feed__description {
+    width: 35%;
+    padding: $spacing-xlarge;
+  }
+
+  .new-feed__date {
+    color: $font-color-muted;
+    font-size: $font-size-small;
+  }
+
+  .new-feed__image {
+    width: 60%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.post {
+  width: $site-text-width;
+  margin: auto;
+  margin-top: $spacing-xlarge * 4;
+  margin-bottom: 300px;
+
+  .post__date {
+    color: $font-color-muted;
+    font-size: $font-size-small;
+    margin-bottom: $spacing-regular;
+  }
+}
+
+.post__stats {
+  margin: $spacing-xxlarge ((($site-width - $site-text-width) / -2) - 100);
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+
+  .post__stat {
+    padding: $spacing-regular;
+    text-align: center;
+    font-family: $font-family-monospace;
+  }
+
+  .post__stat__value {
+    font-weight: $font-weight-bold;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post__stat__label {
+    font-size: $font-size-small;
+  }
+
+  img {
+    width: 42px;
+    height: auto;
+  }
+}
+
+.post__location__info {
+  display: flex;
+  justify-content: space-between;
+}
+.post__location__address,
+.post__location__hours {
+  font-size: $font-size-small;
+  font-family: $font-family-monospace;
+  margin-bottom: $spacing-regular;
+}
+
+.footer {
+  border-top: 1px solid $border-color;
+  color: $font-color-muted;
+  display: flex;
+  font-size: $font-size-small;
+  margin: $spacing-xxlarge auto;
+  padding: $spacing-regular 0;
+  width: $site-width;
+
+  .footer__copyright {
+    margin-left: auto;
+  }
+
+  .footer__menu {
+    a {
+      display: block;
+      border: none;
+    }
+  }
+}

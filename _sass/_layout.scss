@@ -61,6 +61,7 @@ header.global-nav {
       position: absolute;
       width: 100%;
       z-index: 0;
+      transition: all 0.3s;
     }
 
     .new-feed__description {
@@ -86,6 +87,11 @@ header.global-nav {
 
     &:hover {
       border-color: $purple-1;
+
+      .new-feed__image {
+        transform: scale(1.01);
+        opacity: 1.0;
+      }
 
       .new-feed__description {
         background-color: $purple-1;

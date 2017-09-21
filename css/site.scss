@@ -28,9 +28,15 @@ $font-weight-normal: normal;
 $site-width: 760px;
 $site-text-width: 660px;
 
+// Colors
+$purple-1: #b36bde;
+$purple-2: #a0aced;
 
-$link-color: #b36bde;
-$link-underline: #a0aced;
+$orange-1: #ff9452;
+$orange-2: #dba871;
+
+$link-color: $purple-1;
+$link-underline: $purple-2;
 
 // Imports
 @import "normalize";

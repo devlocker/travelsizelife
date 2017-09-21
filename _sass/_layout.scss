@@ -1,18 +1,18 @@
 header.global-nav {
-  padding: $spacing-regular;
   display: flex;
+  padding: $spacing-regular;
 
   .global-nav__links {
     margin-left: auto;
   }
 
   a {
+    color: $font-color-light;
     font-size: $font-size-small;
     letter-spacing: 1px;
     margin: 0 $spacing-small;
     text-decoration: none;
     text-transform: uppercase;
-    color: $font-color-light;
 
     &:hover {
       color: $font-color;
@@ -23,24 +23,73 @@ header.global-nav {
 .new-feed {
   width: $site-width;
   margin: auto;
-  display: flex;
   margin-top: $spacing-xlarge * 2;
-
-  .new-feed__description {
-    width: 35%;
-    padding: $spacing-xlarge;
-  }
 
   .new-feed__date {
     color: $font-color-muted;
     font-size: $font-size-small;
   }
 
-  .new-feed__image {
-    width: 60%;
+  .new-feed__post {
+    align-items: center;
+    border: 5px solid $purple-2;
+    display: flex;
+    height: 375px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    transition: all 0.3s;
+    margin-bottom: $spacing-large;
 
-    img {
-      max-width: 100%;
+    &.theme-orange {
+      border-color: $orange-2;
+      .new-feed__description { background-color: $orange-2; }
+
+      &:hover {
+        border-color: $orange-1;
+        .new-feed__description { background-color: $orange-1; }
+      }
+    }
+
+
+    .new-feed__image {
+      background-size: cover;
+      filter: blur(1px);
+      height: 375px;
+      opacity: 0.8;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .new-feed__description {
+      background-color: $purple-2;
+      color: #fff;
+      font-weight: bold;
+      padding: $spacing-regular;
+      text-align: center;
+      font-size: 36px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      z-index: 5;
+    }
+
+    &.theme-purple {
+      border-color: $purple-2;
+
+      .new-feed__description {
+        background-color: $purple-2;
+      }
+    }
+
+    &:hover {
+      border-color: $purple-1;
+
+      .new-feed__description {
+        background-color: $purple-1;
+      }
     }
   }
 }

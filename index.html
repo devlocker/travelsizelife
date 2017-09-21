@@ -2,16 +2,15 @@
 layout: default
 title: Travel Size Life
 ---
-{% for post in site.posts %}
-  <h1><a href={{ post.url | prepend: site.github.url }}>{{ post.title }}</a></h1>
-{% endfor %}
-  <div class="new-feed">
-    <div class="new-feed__description">
-      <div class="new-feed__date">September 09. 2017</div>
-      <h1>Sweden</h1>
-    </div>
-    <div class="new-feed__image">
-      <img src="{{ site.github.url }}/images/05.sweden/featured/featured-1.jpg">
-    </div>
-  </div>
-Hi
+<div class="new-feed">
+  <h2>Travels</h2>
+  {% for post in site.posts %}
+    <a href="{{ post.url | prepend: site.github.url }}" class="new-feed__post theme-{{ post.theme }}">
+      <div 
+        class="new-feed__image"
+        style="background-image: url('{{site.github.url}}/images/{{ post.home_page_image }}')">
+      </div>
+      <div class="new-feed__description">{{ post.home_page_title }}</div>
+    </a>
+  {% endfor %}
+</div>

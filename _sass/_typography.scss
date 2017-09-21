@@ -9,6 +9,7 @@ h1 {
   font-family: $font-family-headings;
   font-weight: normal;
   margin: 0 0 $spacing-xlarge 0;
+  line-height: 64px;
 }
 
 h2 {
@@ -16,12 +17,14 @@ h2 {
   font-family: $font-family-headings;
   font-weight: normal;
   margin: $spacing-xlarge 0;
+  line-height: 48px;
 }
 
 h3 {
   font-size: 28px;
   font-family: $font-family-headings;
   font-weight: normal;
+  line-height: 36px;
 }
 
 hr {

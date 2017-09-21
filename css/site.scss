@@ -9,6 +9,7 @@ $font-color-muted: #999;
 $border-color: #ccc;
 
 $spacing-base: 8px;
+$spacing-tiny: $spacing-base / 2;
 $spacing-small: $spacing-base;
 $spacing-regular: $spacing-base * 2;
 $spacing-large: $spacing-base * 3;
@@ -47,6 +48,10 @@ $link-underline: $purple-2;
 @import "typography";
 
 // Global
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
 }

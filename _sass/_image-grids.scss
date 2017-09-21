@@ -2,6 +2,11 @@
   display: flex;
   margin: 0 ((($site-width - $site-text-width) / -2) - 100);
   width: $site-width + 200;
+
+  @media (max-width: $site-width) {
+    width: 100%;
+    margin: 0;
+  }
   
   img { 
     max-width: 100%;
@@ -13,6 +18,7 @@
   .im-landscape {
     flex: 1.5;
     padding: $spacing-small;
+
   }
 
   .im-portrait {
@@ -23,5 +29,13 @@
   .im-single {
     flex: 1;
     padding: $spacing-small;
+  }
+}
+
+.image-grid {
+  .im-landscape, .im-portrait {
+    @media (max-width: $site-width) {
+      padding: $spacing-tiny;
+    }
   }
 }

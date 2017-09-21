@@ -25,7 +25,7 @@ header.global-nav {
   margin: auto;
   margin-top: $spacing-xlarge * 2;
 
-  @media (max-width: $site-width) {
+  @media (max-width: $breakpoint-mobile) {
     width: 100%;
     padding: $spacing-regular;
   }
@@ -81,6 +81,10 @@ header.global-nav {
       text-transform: uppercase;
       transition: all 0.3s;
       z-index: 5;
+
+      @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+      }
     }
 
     &.theme-purple {
@@ -112,7 +116,7 @@ header.global-nav {
   margin-top: $spacing-xlarge * 4;
   margin-bottom: 300px;
 
-  @media (max-width: $site-width) {
+  @media (max-width: $breakpoint-mobile) {
     width: 100%;
     padding: $spacing-regular;
   }
@@ -131,7 +135,7 @@ header.global-nav {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $site-width) {
+  @media (max-width: $breakpoint-mobile) {
     display: none;
   }
 
@@ -162,7 +166,12 @@ header.global-nav {
 .post__location__info {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
 }
+
 .post__location__address,
 .post__location__hours {
   font-size: $font-size-small;
@@ -179,7 +188,7 @@ header.global-nav {
   padding: $spacing-regular 0;
   width: $site-width;
 
-  @media (max-width: $site-width) {
+  @media (max-width: $breakpoint-mobile) {
     padding: $spacing-regular;
     width: 100%;
   }

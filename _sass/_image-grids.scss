@@ -3,7 +3,7 @@
   margin: 0 ((($site-width - $site-text-width) / -2) - 100);
   width: $site-width + 200;
 
-  @media (max-width: $site-width) {
+  @media (max-width: 760px) {
     width: 100%;
     margin: 0;
   }
@@ -34,7 +34,7 @@
 
 .image-grid {
   .im-landscape, .im-portrait {
-    @media (max-width: $site-width) {
+    @media (max-width: 760px) {
       padding: $spacing-tiny;
     }
   }

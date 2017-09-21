@@ -3,6 +3,9 @@
   <head>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.github.url}}/css/site.css" type="text/css" media="screen, projection" />
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
 </head>
 </html>
 <body>

@@ -25,8 +25,9 @@ permalink: none
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
+
+gems:
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass

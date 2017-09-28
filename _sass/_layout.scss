@@ -57,6 +57,15 @@ header.global-nav {
       }
     }
 
+    &.theme-red {
+      border-color: $red-2;
+      .new-feed__description { background-color: $red-2; }
+
+      &:hover {
+        border-color: $red-1;
+        .new-feed__description { background-color: $red-1; }
+      }
+    }
 
     .new-feed__image {
       background-position: center;

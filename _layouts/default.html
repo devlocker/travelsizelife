@@ -3,7 +3,7 @@
   <head>
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/site.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/site.css?{{site.time | date: '%s%N' }}" type="text/css" media="screen, projection" />
     {% if jekyll.environment == 'production' %}
       {% include analytics.html %}
     {% endif %}

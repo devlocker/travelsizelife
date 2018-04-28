@@ -30,6 +30,12 @@ header.global-nav {
     padding: $spacing-regular;
   }
 
+  .new-feed__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .new-feed__date {
     color: $font-color-muted;
     font-size: $font-size-small;
@@ -39,33 +45,13 @@ header.global-nav {
     align-items: center;
     border: 5px solid $purple-2;
     display: flex;
-    height: 375px;
+    height: 275px;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 32%;
     transition: all 0.3s;
     margin-bottom: $spacing-large;
-
-    &.theme-orange {
-      border-color: $orange-2;
-      .new-feed__description { background-color: $orange-2; }
-
-      &:hover {
-        border-color: $orange-1;
-        .new-feed__description { background-color: $orange-1; }
-      }
-    }
-
-    &.theme-red {
-      border-color: $red-2;
-      .new-feed__description { background-color: $red-2; }
-
-      &:hover {
-        border-color: $red-1;
-        .new-feed__description { background-color: $red-1; }
-      }
-    }
 
     .new-feed__image {
       background-position: center;
@@ -80,12 +66,13 @@ header.global-nav {
     }
 
     .new-feed__description {
-      background-color: $purple-2;
       color: #fff;
       font-weight: bold;
       padding: $spacing-regular;
       text-align: center;
-      font-size: 36px;
+      text-shadow: 1px 1px 0px black;
+      font-size: 28px;
+      padding: 8px;
       letter-spacing: 3px;
       line-height: 48px;
       text-transform: uppercase;
@@ -94,14 +81,6 @@ header.global-nav {
 
       @media (max-width: $breakpoint-mobile) {
         width: 100%;
-      }
-    }
-
-    &.theme-purple {
-      border-color: $purple-2;
-
-      .new-feed__description {
-        background-color: $purple-2;
       }
     }
 

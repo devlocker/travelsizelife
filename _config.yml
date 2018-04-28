@@ -26,11 +26,13 @@ permalink: none
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-sitemap
+  - image_grid_tag
 
 sass:
   sass_dir: _sass
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

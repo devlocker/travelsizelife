@@ -4,6 +4,7 @@ title: Travel Size Life
 ---
 <div class="new-feed">
   <h2>Travels</h2>
+  <div class="new-feed__grid">
   {% for post in site.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="new-feed__post theme-{{ post.theme }}">
       <div 
@@ -13,4 +14,5 @@ title: Travel Size Life
       <div class="new-feed__description">{{ post.home_page_title }}</div>
     </a>
   {% endfor %}
+  </div>
 </div>

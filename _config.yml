@@ -28,7 +28,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-sitemap
-  - image_grid_tag
+  - travelsize_jekyll
 
 sass:
   sass_dir: _sass

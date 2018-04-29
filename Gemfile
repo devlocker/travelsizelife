@@ -13,6 +13,10 @@ source "https://rubygems.org"
 # gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
+#
+gem "rake"
+gem "jekyll"
+
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "travelsize_jekyll", path: "./gems/travelsize_jekyll"

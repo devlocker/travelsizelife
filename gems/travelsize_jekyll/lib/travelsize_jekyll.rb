@@ -56,7 +56,7 @@ module Jekyll
 
     def render_stats
       @stats.map do |stat|
-        value, label = stat.split(",")
+        value, label = stat.split("//")
 
         <<~HTML
           <div class="post__stat">

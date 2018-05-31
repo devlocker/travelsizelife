@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stonehenge
-visit_date: September 28, 2017
+visit_date: September 30, 2017
 home_page_title: Stonehendge
 home_page_image: /08.london/london-35.jpg
 theme: purple

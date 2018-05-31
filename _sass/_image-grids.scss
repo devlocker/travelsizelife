@@ -5,6 +5,7 @@ img {
   display: flex;
   margin: 0 ((($site-width - $site-text-width) / -2) - 100);
   width: $site-width + 200;
+  justify-content: center;
 
   @media (max-width: $breakpoint-mobile) {
     width: 100%;
@@ -25,7 +26,7 @@ img {
   }
 
   .im-portrait {
-    flex: 0.6666666667;
+    flex: 1;
     padding: $spacing-small;
   }
 

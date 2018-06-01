@@ -6,7 +6,7 @@ branches:
   only:
     - gh-pages
 install:
-- bundle install
+- bundle install --path=vendor/bundle --jobs=4 --retry=3
 deploy:
   provider: pages
   skip_cleanup: true
